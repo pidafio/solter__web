@@ -1,0 +1,108 @@
+.grilla__contenedor{
+    width: 80%;
+    margin:2em auto ;
+
+}
+
+
+.contenedor__grillas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-gap: 20px; */
+}
+
+
+.grilla__Procuto{
+
+display: inline-block;
+ margin:2em 8px 3em 2em; 
+ width:240px; 
+height: 380px;
+border: solid 1px rgb(181, 176, 176);
+background: rgb(254, 253, 251);
+border-radius: 20px;
+box-shadow: 3px 3px 8px rgba(112, 1, 1, 0.56);
+
+
+}
+
+.img__paraGrilla{
+    /* position: relative; */
+    margin-top: 0.8em;
+    margin-left:4.8% ;
+    height: 55%;
+    width: 90%;
+    /* background-size: cover; */
+  
+}
+
+.imgGrilla{
+    width: 100%;
+    height: 97%;
+    object-fit: contain;
+}
+
+.grilla__precio{
+    width: 80%;
+    padding: 0.35em;
+    padding-left: 0;
+    padding-right: 0 ;
+    margin-left: 9.8%;
+    /* margin-top: 12px; */
+    font-family:Raleway ;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.grilla__descripcion{
+    /* margin-top: 15px; */
+    width: 80%;
+    margin-left:9.8% ;
+    font-family:Raleway ;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.texto__grilla-descripcion{
+    line-height: 1.45;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-size: 0.7em;
+    color: rgb(90, 89, 89);
+    font-family: Ubuntu;
+    margin-top: 0.3em;
+}
+.grilla__btnComprar{
+  width: 10em;
+  height: 2.3em;  
+  margin-top: 13px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background: rgb(238, 93, 48);
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px rgba(112, 1, 1, 0.56);
+  border: 1.3px solid red;
+  color: aliceblue;
+}
+
+
+
+@media  (max-width:420px){
+
+
+    .grilla__Procuto{
+
+        display:block;
+     
+        margin: .5em auto 2em auto;
+    }
+
+    .contenedor__grillas{
+        display: block;
+    }
+
+
+}
+

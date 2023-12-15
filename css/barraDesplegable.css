@@ -1,0 +1,127 @@
+.Items__Menu{
+    display: flex;
+    margin: 1em ;
+}
+
+.Texto__Desplegable{
+        
+    display: block;
+    padding: 0.3em 2em 0.5em 2em;
+    text-decoration: none;
+    color: rgb(112, 104, 109);
+    list-style: none;
+    text-shadow: -1px 0px 2px rgb(195, 195, 196);
+    font-size: 1.5em;
+    font-style: Raleway;
+    margin-left: -.8em;
+ 
+} 
+.Desplegado{
+    font-size: .9em;
+    color: rgb(77, 76, 76);
+    margin-top: 0.4em;
+    border-bottom: 1px solid rgb(247, 140, 64);
+    
+}
+
+
+.Btn__Menu{
+  font-size:1em;
+  font-family: Ubuntu;
+  padding: .5em;
+  margin-bottom: .2em;
+
+
+}
+
+.Items__Menu .Texto__Desplegable{
+    padding-left: 2em;
+}
+
+.Items__Menu{
+    position: relative;
+    margin-top: 1.9em;
+   
+}
+
+.Submenu__Productos{   
+    background: rgb(245, 186, 144);
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s; 
+    margin: .48em -1.2em 0 -1.7em;
+    
+}
+.fa-chevron-down{
+    color:  rgb(240, 85, 42);;
+}
+
+
+
+        /* RESPONSIVE */
+
+   @media  (max-width:420px){
+
+
+.Items__Menu{ 
+    position: absolute;
+        padding: 0;
+        padding-top: 1em;
+        margin: 0;
+        width: 47%;
+        height: 500px;
+        margin-left: -100%;
+        transition: all .5s;
+        background: linear-gradient( rgb(237, 239, 240),rgb(232, 234, 236),rgb(206, 208, 210));
+        margin-top: 4.3em;
+        
+    }
+    .Texto__Desplegable{
+        
+        display: block;
+        padding: 0.7em;
+        text-decoration: none;
+        color: rgb(59, 49, 55);
+        list-style: none;
+        text-shadow: -1px 0px 2px rgb(163, 163, 178);
+        font-size: .87em;
+        font-style: Raleway;
+        margin-left: -.8em;
+        
+    } 
+
+    .Items__Menu .Texto__Desplegable{
+        padding-left: 2em;
+    }
+
+    .Submenu__Productos{
+       
+        margin-right:0;
+        background:rgb(245, 186, 144);
+        padding-left: 27px;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.3s;
+        margin-left: -.7em;
+        
+    }    
+   
+    .Mostrar{
+        margin-top: 4.38em;
+        margin-left: 0;
+        display: inline-block;
+        z-index: 2;
+        min-height: 100vh;
+        
+        
+    }
+    .Btn__Menu{
+        font-size:.8em;
+        font-family: Ubuntu;
+        padding: .2em;
+        /* margin-bottom: .2em; */
+      
+      
+      }
+
+}

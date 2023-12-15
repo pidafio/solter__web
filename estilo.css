@@ -1,0 +1,304 @@
+body {
+   
+    width: 100%;
+    position:absolute;
+    
+    background: rgb(239, 239, 239);
+    
+    
+}
+
+.Encabezado__Menu{
+    background: rgb(250, 63, 63);
+}
+
+
+.Texto__Encabezado{
+    display: flex;
+    justify-content: center;
+    color:white;
+    font-family: Ubuntu;
+    font-size: 1.2em;
+    padding: .3em;
+    font-weight:  bolder;
+    letter-spacing: .1em;
+   
+    
+}
+
+.Menu__Container{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+	margin: 0 ;
+    height: 4.3em;
+    cursor: pointer;
+    background:rgb(239, 239, 239);
+   
+}
+
+
+.Btn__Barra .Logo__Empresa .icon__Menu{
+    display:inline-block ;
+}
+
+
+.icon__Menu{
+    font-size: 2em;
+    color: rgb(168, 161, 161);
+    margin-left: 1.7em;
+    margin-top: 0.1em;
+    text-shadow: 2px 2px 3px black;
+   
+}
+
+
+.Logo__Solter{
+    width: 12em;
+    height: 5.8em;
+    margin-top: -0.6em;
+ 
+}
+
+
+
+.Btn__Barra{
+    display: flex;
+    margin-right: 1.6em;
+    
+}
+.Btn__icon {
+    color:rgb(168, 161, 161);
+    font-size: 1.4em;
+    margin: 1.2em 0 0 1em;
+    text-shadow: 2px 2px 3px black;
+    
+}
+
+
+
+.notificacion{
+    display: none;
+    margin-left: .6em;
+    margin-top:-1.7em;
+    position:absolute;
+
+    text-align: center;
+    width: 1em;
+    padding: .1em;
+    font-family: Ubuntu;
+    font-size: .8em;
+    color: rgb(230, 205, 205);
+    background: rgba(255, 51, 0, 0.792);
+    border-radius: 50%;
+
+   
+}
+.Btn__Menu{
+    display:flex;
+    margin-left: 0.4em;
+}
+
+.icon__Menu{
+    display:none
+}
+
+.Separador__menu{
+
+    border-bottom: 1.5px solid rgb(255, 123, 0);
+    
+}
+
+
+
+.Contenedor__Enlace{
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 4em 2.5em 4em 2.5em;
+    justify-items: center;
+    
+   
+   
+}
+
+.Caja__Enlase{
+
+    width: 17em;
+    height: 22em;
+    border:1px solid rgb(209, 205, 205);
+    border-radius: 18px;
+    box-shadow: 3px 3px 8px  #ad691d;
+   
+}
+
+.EnlaceAireAcondicionado{
+
+    background-image: url("./img/imagenes/local-solter.jpeg") ;
+    background-size: cover;
+    background-position:center;
+}
+
+
+.EnlaceEquipoCentrales{
+    
+    background-image: url("./img/imagenes/equipo-solter.jpeg") ;
+    background-size: cover;
+    background-position:left;
+}
+
+.EnlaceRepuestos{
+    background-image: url("./img/imagenes/atencion-publico-solter.jpeg") ;
+    background-size: cover;
+    background-position:center;
+
+}
+
+
+
+.Texto__Nombre-Enlace{
+    display: flex;
+    height: 20vh;
+    background: rgba(0, 0, 0, 0.384);
+    font-family: Ubuntu;
+    font-size: 1em;
+    color:rgb(247, 241, 244);
+    font-weight:  900;
+    justify-content: center;
+    margin-top: 75%;
+    padding: 1.5vw;
+
+    
+}
+/*---------------------FOOTER---------------*/
+
+.container__footer{
+    display: flex;
+    position:relative;
+    height: 20vh;
+    background: rgb(40, 39, 39);
+    align-items: center;
+    justify-content:space-between;
+    font-size: 2vw;
+}
+
+
+.container__ico{
+   
+    display: flex;
+    margin-right: 2vw;
+}
+.ico__footer{
+    background-color: aliceblue;
+    font-size: 2vw;
+}
+
+.text__footer{
+    margin-left: 45%;
+    color:white;
+    font-family: Indie Flower;
+    
+    
+}
+
+.ico__footer{
+    background: rgb(48, 47, 47);
+    padding: 1vw;
+    cursor: pointer;
+}
+.ico__footer:hover{
+ font-size: 90%;
+ 
+}
+
+
+               /* RESPONSIVE */
+
+@media  (max-width:420px){
+
+
+    .Menu__Container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 ;
+        height: 4.3em;
+        cursor: pointer;     
+    }
+
+
+    .icon__Menu{
+        display: flex;
+        font-size: 1.6em;
+        color: rgb(168, 161, 161);
+        margin-left: .7em;
+        margin-top: 0.3em;
+        text-shadow: 2px 2px 2px black;  
+    }
+
+   
+
+    .Btn__Menu{
+        display: flex;
+    }
+
+    
+    .Btn__icon{
+        color:rgb(168, 161, 161);
+        font-size: 2em;
+        margin-left: 1em;
+        margin-top: 0.5em;
+       text-shadow: 2px 2px 3px black;
+    }
+  
+    
+    .Logo__Solter{
+        width: 9em;
+        height: 3em;
+        margin-left: 1.7em;  
+    }
+
+
+    .Btn__icon{
+        color:rgb(168, 161, 161);
+        font-size: 1.3em;
+        margin-left: .5em;
+       text-shadow: 2px 2px 3px black;
+    }
+
+
+    .Btn__Barra{
+        display: flex;
+        margin-right: 1.1em;    
+    }
+
+    
+    .Logo__Empresa{
+        margin: auto;
+    }
+
+   
+    .Contenedor__Enlace{
+        display: block;
+        width: 100vw;
+        margin-left: -1vw;
+    }
+    .Caja__Enlase{
+        display: block;
+        width: 100%;
+        height: 30vh;
+        margin-bottom: 3em;
+        margin-top: 3em;
+            border:none;
+            border-radius:0;
+            box-shadow: none;
+    }
+    .Texto__Nombre-Enlace{
+        height: 8vh;
+    margin-top: 40%;
+    padding: 1vh;
+
+    }
+
+} 
+

@@ -1,0 +1,32 @@
+.container__texto-nosotros{
+    width: 100%;
+    height: 80vh;
+    background: #F7F8F8;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ACBB78, #F7F8F8);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ACBB78, #F7F8F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.parrafo__nosotro{
+    display: flex;
+    text-shadow: 1px 1px rgb(193, 190, 190);
+    color: rgb(79, 77, 77);
+    font-size: 3vw;
+    padding: 3vw;
+}
+/*--------------responsive-------------*/
+
+
+@media  (max-width:420px){
+    .container__texto-nosotros{
+        height: 68vh;
+    }
+    .parrafo__nosotro{
+        display: block;
+       padding-top: 6vh;
+        text-align: center;
+        font-size: 3vw;
+        
+    }
+
+}

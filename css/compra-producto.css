@@ -1,0 +1,351 @@
+header,main{
+    width: 900px;
+    margin: auto;
+   
+}
+.Encabezado__Menu{
+    display: none;
+}
+.Menu__Container{
+    background:rgb(239, 239, 239);
+}
+.container__compra{
+    display: flex;
+}
+.Galeria__Container{
+    width: 50%;
+    
+}
+
+.galeria__imgPrincipal{
+  background-position: center;
+  width:100%;
+  height:100%;
+  border-radius: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+    
+}
+
+.Galeria__Imagen-Container{
+    position: relative;
+    width: 80%;
+    height: 20em;
+    margin-top: 2em;
+    /* border: 2px solid black; */
+    margin-left: 5%;
+    /* background: red; */
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px 3px rgba(123, 87, 87, 0.482);
+
+}
+.Btn__Siguiente, .Btn__Previo{
+    display: none;
+}
+
+.galeria__Miniaturas{
+    display: flex;
+    width: 60%;
+    height: 5em;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-top: 2em;
+    
+  
+}
+
+.Galeria__Miniatura{
+   width: 3em;
+   height: 3em;
+   border-radius: 8px;
+   box-shadow: 2px 2px 2px 2px rgba(96, 66, 66, 0.482);
+  
+}
+
+.activa{
+    
+    border: solid rgb(238, 93, 48);;
+}
+
+.Descripcion{
+   width: 50%;
+    
+    margin: 2em 5% 0 10%;
+}
+
+.Descripcion__Marca{
+   
+    font-family: Raleway;
+    font-size: 1.2em;
+    margin: 1.3em 0 1em 0;
+    color: rgb(245, 41, 41);
+
+}
+
+.Descripcion__Titulo{
+    width: 80%;
+    font-size: 1.8em;
+    font-family: Ubuntu;
+    margin-bottom:  1.3em;
+}
+
+.Descripcion__Parrafo{
+ font-size: .9em;
+ color: rgb(79, 78, 78);
+ margin-bottom: 2em;
+
+}
+
+.precio__descuento{
+    display: flex;
+}
+.Precio__Carrito{
+    font-size: 1.3em;
+    margin-bottom: .7em;
+}
+
+.descuento__precio{
+ height: 1em;
+  margin-left: 0.9em;
+  margin-left: .8em;
+  font-size: .9em;
+  color: rgb(224, 147, 4);
+  background: rgba(253, 213, 140, 0.56);
+}
+.Precio__lista{
+    margin-bottom: .7em;
+    color: gray;
+}
+
+
+.Imput__Carrito{
+    display: flex;
+    margin-bottom: 2em;
+    
+}
+
+.BtnModificarCarrito{
+    padding: .5em;
+    color: red;
+    font-size: 1.4em;
+    
+}
+
+.Carrito__Conteiner{
+    display: flex;
+}
+
+
+.Imput__Visor{
+
+    width: 1.7em;
+    height: 1.4em;
+    margin-top: 1em;
+    outline: none;
+    font-weight: 600;
+    text-align: center;
+}
+.Imput__Carrito{
+margin-left: 1em;
+}
+
+
+.Carrito__Boton{
+    width: 15em;
+    height: 2.7em;
+    margin: 0.4em 0 0 2em;
+    background: rgb(238, 93, 48);
+    border: 1px solid;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 3px 3px 6px grey;
+}
+
+
+
+
+
+
+
+.Modal__conteiner{
+     display:none;
+    margin-top: 2em;
+    border: 2px solid rgb(115, 114, 114);
+    width: 29em;
+    height: 19em;
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 2em;
+    left:35em;
+}
+.Modal__Texto-Tarjeta{
+
+        margin: 0.6em 0 2.3em 0.5em;
+        font-family: Ubuntu;
+        font-weight: 900;
+        font-size: 1.4em;
+        color: rgb(96, 93, 93);
+}
+.Modal__Separador{
+    border-bottom: 1.5px solid;
+    color: rgb(68, 10, 10);
+}
+.Modal__info{
+    display: flex;
+    margin: 2em 1em 1.7em 1em;
+}
+.Info__Modal{
+    width: 60%;
+    line-height: 1.5em;
+    margin: auto 1.2em 0.2em 1.5em;
+}
+.Nombre__Producto-Modal{
+    font-size: .9em;
+    color: grey;
+   
+}
+
+.imagen__Modal{
+    width: 6em;
+    height: 5em;
+    border: 1px solid
+}
+.Precio__Producto-Modal{
+    font-size: 1.2em;
+    color: rgb(92, 91, 91);
+}
+.Precio__Total-Modal{
+    font-size: 1.1em;
+    color: black;
+    margin-left: 0.5em;
+    font-weight: 600;
+}
+.Cerrar__Modal{
+    font-size: 2em;
+    font-weight: 600;
+    color: rgb(238, 93, 48);
+    margin-top: 1em;
+}
+.Modal__Btn{
+
+    margin: 1em;
+    width: 90%;
+}
+.Comprar__Modal{
+    width: 90%;
+    height: 3em;
+    color: rgb(245 242 242);
+    background:rgb(238, 93, 48);
+    border-radius: 9px;
+    box-shadow: 3px 3px 6px grey;
+   border: none;
+}
+
+@media  (max-width:420px){
+     
+
+    header,main{
+        width: 100%;
+        margin:none;
+    }
+    
+    .container__compra{
+        display: block;
+    }
+    .Galeria__Container{
+   width: 100%;
+
+
+   } 
+    .Galeria{
+        display: block;
+        width: 100%;
+    }
+    .Galeria__Imagen-Container{
+      
+        display: block;
+        margin: 2em auto;
+    }
+
+    .Btn__Siguiente, .Btn__Previo{
+        display: flex;
+        position: absolute;
+        background: rgba(246, 239, 225, 0.639);
+        width: 1em;
+        padding: 0.2em;
+        border-radius: 10px;
+        text-align: center;
+        margin-top: -10.5em;
+        font-weight: bold;
+        box-shadow: 2px 2px 4px rgb(73, 73, 73);
+        color: rgba(51, 49, 49, 0.429);
+    }
+    .Btn__Siguiente{
+        right: .4em;
+        
+     }
+     .Btn__Previo{
+         left: .4em;
+     }
+
+
+    .Galeria__Miniatura{
+      display: none;
+
+    }
+    
+
+    .Descripcion{
+        display: block;
+        width: 80%;
+        margin-top: -5em;
+    }
+    .Carrito__Conteiner{
+        display: block;
+        text-align: center;
+    }
+    .Imput__Carrito{
+        border-radius: 9px;
+        justify-content: space-between;
+        margin-left: 0;
+        background:   #ebeaeaef;
+    }
+    .Carrito__Boton{
+        width: 100%;
+        height: 3.6em;
+        margin: 0 0 2em 0;
+    }
+    .Imput__Visor{
+        text-align: center;
+    font-weight: 500;
+    padding: 0.3em;
+    font-size: 1.4em;
+    margin-top: 0;
+    border: none;
+    background:   #ebeaeaef;
+    }
+    .Modal__conteiner{
+        width: auto;
+        height: 17em;
+        left: 0;
+        margin: 3em 1em 0 1em;
+    }
+    .Modal__Texto-Tarjeta{
+        font-family: Raleway;
+        color: rgb(78, 76, 76);
+    }
+    .Info__Modal{
+        line-height:normal;
+    }
+    .Modal__Btn{
+        width: 100%;
+    }
+    .Modal__Texto-Tarjeta{
+        margin: 0.6em 0 1.3em 0.5em;
+    }
+    .Cerrar__Modal{
+        margin-top: 0.7em;
+    }
+}
