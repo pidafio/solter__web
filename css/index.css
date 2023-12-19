@@ -1,0 +1,413 @@
+/*----------slider-------------------*/
+
+.contenedor__Silder{
+  
+  
+    width:100%;
+    height: 450px;
+    margin: 10px 0px;
+    
+  
+  }
+  .Btn__Derecha, .Btn__Izquierda{
+      
+      position: absolute;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      margin-top: 175px;
+      background-color: rgba(223, 218, 218, 0.564);
+      text-align: center;
+      line-height: 40px;
+      font-size: 2em;
+      color: rgb(248, 250, 252);
+      text-shadow: -1px 0px 2px rgb(49, 49, 50);
+      cursor: pointer;
+  }
+  .Btn__Derecha{
+     
+     right: 5px;
+     
+  }
+  .Btn__Izquierda{
+      z-index: 1 ;
+      left: 5px;
+      
+  } 
+  
+  .img{
+      width: 100%;
+      height: 450px;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      background-position: 50%;
+  }
+
+
+/*------------BANNER-----------------*/
+.container__banner{
+    display: flex;
+    background: rgb(214, 213, 214);
+    margin-top: 3.5vh;
+    overflow: hidden 
+}
+
+.img_banner{
+    width:10vw ;
+    height:7vh;
+    margin: auto 2vh auto 2vh;
+}
+
+
+.banner {
+    display: inline-flex;
+    align-items: flex-end;
+    width: 50%;
+    height: 4em;
+    background: rgb(214, 213, 214);
+    animation: despejar 10s linear infinite ;
+}
+.visa{
+    width: 80px;
+    height: 40px;
+}
+
+@keyframes despejar {
+    from{
+        transform: translateX(-60vw)  ;
+    }
+    to{
+        transform: translateX(100vw) ;
+        
+    }
+}
+
+
+/*------------PINES-------------------*/
+
+.container_pines{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    grid-gap:10px;
+    margin-top: 12vh;    
+    background: -webkit-radial-gradient(rgb(255, 255, 255), rgb(239, 239, 239));
+    background: radial-gradient(rgb(255, 255, 255), rgb(239, 239, 239));
+    height: 22em;
+    justify-content: center;
+
+}
+
+.box__img-pin{
+    display: flex;
+    background: white;
+    margin: 3vw;
+    border: solid 2px black;
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.img__pin{
+    width: 55px;
+    height: 60px;
+}
+
+.text__pin{
+    display: flex;
+    font-size: 2vw;
+    margin-top: -2vw;
+    justify-content: space-around;
+    margin-left: -4vw;
+}
+
+/*_______________CARDS INDEX__________________*/
+
+.Contenedor__cards-index{
+    display: flex;
+    justify-content: space-around;
+}
+.box-cards-index{
+    margin: 4vh 0 4vh 0;
+    width: 22em;
+    height: 22em;
+    border:1px solid rgb(209, 205, 205);
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px  #ad691d;
+    overflow: hidden;
+    cursor: pointer;
+}
+.box__cards-index1{
+    background-image: url("../img/imagenes/local-solter.jpeg");
+    background-size: cover;
+    background-position:center;
+}
+.box__cards-index2{
+    background-image: url("../img/imagenes/atencion-publico-solter.jpeg");
+    background-size: cover;
+    background-position:center;
+}
+.box__cards-index3{
+    background-image: url("../img/imagenes/equipo-solter.jpeg");
+    background-size: cover;
+    background-position:center;
+}
+
+.text__cards-index{
+    position: fixed;
+    height: 22em;
+    border-radius: 10px ;
+    background: rgba(0, 0, 0, 0.489);
+    font-family: Ubuntu;
+    font-size: 1.4em;
+    color:rgb(247, 241, 244);
+    text-shadow: 1px 1px 1px black;
+    font-weight:  900;
+    justify-content: center;
+    padding: 1.5vw;
+    
+
+}
+@keyframes deslizarText {
+    
+    0% {
+        position: relative;
+      transform:translateY(100%) ;
+    }
+    100% {
+        position: relative;
+        transform:translateY(0);
+    }
+  }
+
+.box-cards-index:hover .text__cards-index{
+
+    animation-name : deslizarText;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+/*________________CLIMA_______________________*/
+
+.body_clima{
+    display: flex;
+    height: 25vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #abbaab;  
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  
+    background: linear-gradient(to right, #ffffff, #abbaab);  
+    margin-bottom: 1vh;
+}
+.container__clima{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:10px;
+}
+
+#clima__box1, #clima__box2, #clima__box3{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    width: 100px;
+    height: 50px;
+    padding-top: 20%;
+    box-shadow: 2px 2px 8px rgb(247, 142, 142);
+    color:white;
+    font-size: 1vw;
+    text-shadow: 1px 1px grey;
+}
+
+#clima__box1{
+    background: rgb(108, 106, 106);
+    
+}
+
+#clima__box2{
+    background: rgb(205, 140, 224);
+}
+#clima__box3{
+    background: rgb(95, 193, 239);
+}
+#icono__descripcion{
+    width: 40px;
+    height: 40px;
+}
+
+/*________________NOSOTROS_____________________*/
+
+.container__nosotros{
+    display: block;
+    width: 100%;
+    height: 35em;  
+    margin-top: 3vh; 
+    
+
+}
+.titulo__nosotros{
+    color: rgb(141, 105, 39);
+    display: block;
+    font-size: 3em;
+    text-align: center;
+    margin: 6vh auto 10vh auto;
+    text-shadow: 1px 1px 1px black;
+}
+
+.text__nosotros{
+    display: block;
+    width: 90%;
+    margin:4vh auto;
+    font-size: 2vw;
+    color: rgb(141, 105, 39);
+    text-shadow: 1px 1px 1px rgb(244, 240, 240);
+    
+}
+
+
+
+/*________________CONTACTO_____________________*/
+
+.container__contacto{
+    display: flex;
+}
+
+.container__text-contacto{
+    display:block;
+    width: 30%;
+    margin: auto 9%;
+    font-size: 1.2em;
+}
+
+
+.container__map{
+    width: 70%;
+    margin: 6vh;
+}
+
+
+/*______________________________________
+----------------RESPONSIVE-------------
+_________________________________________*/
+
+@media  (max-width:420px){
+
+/*---------Slider responsive----------*/
+
+.contenedor__Silder{
+    display: block;
+}
+
+/*---------pines responsive-----------*/
+
+        .container_pines{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box__img-pin{
+            width: 4em;
+            height: 4em;
+        }
+        .text__pin{
+            font-size: 1em;
+            margin-left: 0;
+        }
+/*-----------Cards index responsive----------*/        
+
+.Contenedor__cards-index{
+    display: block;
+    width: 100vw;
+   
+}
+.box-cards-index{
+    display: block;
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 3em;
+    margin-top: 3em;
+        border:none;
+        border-radius:0;
+        box-shadow: none;
+        
+}
+.box-cards-index:hover .text__cards-index{
+    animation-name:none ;
+}
+.text__cards-index{
+   position: relative;
+   font-size: 1.2em;
+   height: 6em;
+   margin-top: 30%;
+   
+}
+/*-----------Clima responsive----------------*/
+
+.body_clima{
+    display: flex;
+    height: auto;
+}
+
+.container__clima{
+    padding: 3vw;
+}
+#clima__box1, #clima__box2, #clima__box3{
+
+    font-size: 2vw;
+}
+
+#icono__descripcion{
+    width: 50px;
+    height: 50px;
+}
+
+/*-----------contacto responsive-------------*/
+
+        .container__contacto{
+            display: block;
+            width: 300px !important;
+        
+        }
+        .container__map{
+        display: contents;
+        
+        }
+
+        .container__text-contacto, .container__map{
+            margin: auto;
+        }
+        .container__text-contacto{
+            display: inline-block;
+            font-size: 3vw;
+            width: 100vw;
+            text-align: center;
+            margin-top: 3vh;
+        }
+        iframe{
+        display: flex;
+        margin: 4vw 5%;
+        width: 90vw;
+        height: 18em;
+        }
+
+    /*------------Banner responsive-----------*/
+    .img_banner{
+        height: 3.5vh;
+        width: 21vw;
+    }
+    .visa{
+        width: 90vw;
+        height: 5vh;
+    }  
+    
+    /*---------------Nosotros responsive-----------*/
+
+    .text__nosotros{
+        font-size: 4vw;
+    }
+}
